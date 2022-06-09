@@ -2,7 +2,7 @@ const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 const items = document.querySelectorAll(".item");
 
-/* Toggle mobile menu */
+/* toggle the mobile menu */
 function toggleMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
@@ -13,7 +13,7 @@ function toggleMenu() {
   }
 }
 
-/* Activate Submenu */
+/* active state submenu */
 function toggleItem() {
   if (this.classList.contains("submenu-active")) {
     this.classList.remove("submenu-active");
@@ -25,7 +25,7 @@ function toggleItem() {
   }
 }
 
-/* Close Submenu From Anywhere */
+/* rest state submenu */
 function closeSubmenu(e) {
   if (menu.querySelector(".submenu-active")) {
     let isClickInside = menu
@@ -37,6 +37,7 @@ function closeSubmenu(e) {
     }
   }
 }
+
 /* Event Listeners */
 toggle.addEventListener("click", toggleMenu, false);
 for (let item of items) {
