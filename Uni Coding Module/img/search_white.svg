@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search">
+            <rect id="background" fill-opacity="0" fill="#000000" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+            <g id="Combined-Shape" transform="translate(10.800000, 10.800000)" stroke="#FFFFFF">
+                <path d="M25.2,25.2 L18.42,18.42 M10.8,21.6 C16.7646753,21.6 21.6,16.7646753 21.6,10.8 C21.6,4.8353247 16.7646753,0 10.8,0 C4.8353247,0 0,4.8353247 0,10.8 C0,16.7646753 4.8353247,21.6 10.8,21.6 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
