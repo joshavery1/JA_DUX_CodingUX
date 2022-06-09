@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uni Assignment</title>
+  <link rel="stylesheet" type="text/css" href= "styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href= "bootstrap-grid.css"/>
+  <link rel="stylesheet" type="text/css" href= "bootstrap-grid.min.css"/>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <ul class="menu">
+      <li class="logo"><a href="../Pages/index.html">Home</a></li>
+      <li class="item has-submenu">
+        <a tabindex="0">Blogs</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="../Pages/scannable&snackable.html">Scannable & Snackable</a></li>
+          <li class="subitem"><a href="#">Coming Soon 1</a></li>
+          <li class="subitem"><a href="#">Coming Soon 2</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="../Pages/contact.html">Contact Us</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="container" id="navspacer">
+  </div>
+
+  <div id="hero">
+    <div class="container" id="herocontent">
+      <h1 class="herocopy">Contact Us</h1>
+      <p class="herocopy">lorem ipsum dolor si amet</p>
+      <p class="herocopy">lorem ipsum</p>
+    </div>
+  </div>
+
+  <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+  </button>
+
+  <section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p><em>*required fields</em></p>
+
+          <form>
+
+              <p>
+                <label for="first-name">First Name(s)</label>
+                <input id="first-name" type="text" placeholder=Joe />
+              </p>
+
+              <p>
+                <label for="surname">Last Name(s)</label>
+                <input id="surname" type="text" placeholder=Bloggs />
+              </p>
+
+              <p>
+                <label for="email">Email Address *</label>
+                <input id="email" type="text" placeholder="joe.bloggs@email.com" required>
+              </p>
+
+              <p style="padding-bottom: 8px; padding-top: 20px; font-size: 11pt; font-weight: 400; box-sizing: border-box; display: block; color: var(--body-text);">Is this related to any of our blog posts?</p>
+                <input id="related_blog_yes" type="radio" name="related to a blog?" onclick="document.getElementById('demo').style.display='block'">
+                <label for="related_blog_yes" style="display: inline; padding-right: 20px;" onclick="document.getElementById('demo').style.display='block'">Yes</label>
+                <input id="related_blog_no" type="radio" name="related to a blog?" onclick="document.getElementById('demo').style.display='none'">
+                <label for="related_blog_no" style="display: inline;" onclick="document.getElementById('demo').style.display='none'">No</label>
+
+
+              <p id="demo" style="display:none">
+                <label for="which_blog_post" style="display: block;">Which blog post?</label>
+                <select id="which_blog_post">
+                    <option value="default" disabled selected>Select a blog post</option>
+                    <option>Scannable & Snackable</option>
+                    <option>Coming Soon 1</option>
+                    <option>Coming Soon 2</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="content">Please tell us a little bit more:</label>
+                <textarea id="content" maxlength="200" placeholder="200 words max"></textarea>
+              </p>
+
+              <input type="submit">
+
+          </form>
+        </div>
+          <div class="col" id="contact_img">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="footer">
+    <div class="container" id="footer_content">
+      <p class="footer_content">lorem ipsum dolor si amet</p>
+      <p class="footer_content">lorem ipsum</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="darkmode.js"></script>
+
+</body>
+
+
+
+</html>
